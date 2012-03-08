@@ -1,4 +1,28 @@
 Rps::Application.routes.draw do
+ 
+ 
+ 
+  match '/Home', :to => 'pages#Home'
+  match '/Play',   :to => 'pages#Play'
+  match '/Win',    :to => 'pages#Win'
+  match '/Lost',   :to => 'pages#Lost'
+  match '/Tie',    :to => 'pages#Tie'
+  
+
+
+
+
+ 
+  get "pages/Home"
+
+  get "pages/Play"
+
+  get "pages/Win"
+
+  get "pages/Lost"
+
+  get "pages/Tie"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
